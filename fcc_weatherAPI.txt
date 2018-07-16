@@ -44,6 +44,5 @@
 	"cod":200 
 }
 
-
-
-AIzaSyCkzKLBOr1OEjN08_JBK0B4GhziLSwghKY
+Known descriptions:
+Haze
