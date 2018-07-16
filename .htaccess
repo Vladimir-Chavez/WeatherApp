@@ -1,4 +1,3 @@
 RewriteEngine On
-
-RewriteCond %{HTTP_HOST} !^www\.weatherapp.vladimirchavez.com$ [NC]
-RewriteRule ^(.*)$ https://weatherapp.vladimirchavez.com$1 [R=301,L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
