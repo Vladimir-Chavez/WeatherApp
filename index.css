@@ -64,13 +64,13 @@ body{
 
 header{
 	text-align: right;
-	padding-right: 5vw;
+	padding-right: 1vw;
 }
 header span{
-	font-size: 2vh;
+	font-size: 3vh;
 }
 #myName{
-	font-size: 1vh;
+	font-size: 2vh;
 }
 header a{
 	color: inherit;
