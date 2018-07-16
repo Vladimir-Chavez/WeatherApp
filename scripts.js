@@ -1,4 +1,3 @@
-const KEY = "AIzaSyCkzKLBOr1OEjN08_JBK0B4GhziLSwghKY";
 
 main();
 
