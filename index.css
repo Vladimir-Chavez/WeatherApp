@@ -1,0 +1,209 @@
+
+/*font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html{
+	background: linear-gradient(to top left, #008CFF, #1CE7DD) no-repeat;
+	background-size: 120vw 120vh;
+	min-height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+body{
+	width: 100vw;
+	min-height: fit-content;
+	overflow-x: hidden;
+	margin: auto;
+}
+
+.txtFormat{
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+}
+
+#appName{
+	background-color: transparent;
+	vertical-align: center;
+	text-align: center;
+}
+#appName p{
+	margin-top: 0;
+	background-color: transparent;
+	font-size: 14px;
+	text-align: right;
+	-webkit-animation: floatUp;
+	-webkit-animation-duration: 3s;
+	-moz-animation: floatUp;
+	-moz-animation-duration: 3s;
+	-o-animation: floatUp;
+	-o-animation-duration: 3s;
+	animation-name: floatUp;
+	animation-duration: 3s;
+}
+#appName h1{
+	margin-bottom: 10px;
+	text-align: left;
+	font-size: 48px;
+	font-weight: bold;
+	text-shadow: 0px 3px 5px rgba(0,0,0,.7);
+	-webkit-animation: fadeIn;
+	-webkit-animation-duration: .5s;
+	-moz-animation: fadeIn;
+	-moz-animation-duration: .5s;
+	-o-animation: fadeIn;
+	-o-animation-duration: .5s;
+	animation-name: fadeIn;
+	animation-duration: .5s;
+}
+#appName a{
+	color: #7300FF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+header{
+	text-align: right;
+	padding-right: 5vw;
+}
+header span{
+	font-size: 2vh;
+}
+#myName{
+	font-size: 1vh;
+}
+header a{
+	color: inherit;
+}
+
+#city{
+	overflow: hidden;
+	padding: 0;
+	margin: auto;
+	height: 11vh;
+	min-width: 600px;
+	margin-top: 8vh;
+	margin-left: 5vw;
+	font-size: 9vh;
+	font-weight: bold;
+}
+
+#city p{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	top: -26%;
+}
+
+
+#main-info{
+	margin: auto;
+	margin-left: 7vw;
+	padding-top:  6vh;
+}
+
+#temp{
+	font-size: 8vh;
+	margin: auto;
+	padding-top: 30px;
+}
+
+#temp a{
+	width: auto;
+}
+
+#icon{
+	margin: auto;
+}
+
+#icon img {
+	width: 16vw;
+	margin: auto;
+}
+
+#description{
+	font-size: 3vh;
+	padding-bottom: 5vh;
+}
+
+
+
+@media screen and (orientation: landscape){
+	#main-info{
+		left: 7vw;
+		top: 29vh;
+	}
+	#city{
+		height: 15vh;
+		top: 11vh;
+		left: 5vw;
+		font-size: 9vh;
+		font-weight: bold;
+		margin-right: 0;
+		padding: 0;
+		padding-top: 5px;
+	}
+
+	#details{
+		min-width: 29vw;
+		height: fit-content;
+		margin: auto;
+		padding-top: 4vh;
+		overflow-y: hidden;
+	}
+	
+	
+}
+.index_1{
+	opacity: 0;
+}
+.index_2{
+	animation: floatUp;
+	animation-duration: 2s;
+	opacity: 100;
+	padding-left: 5vw;
+}
+
+/********************VERTICAL CENTER*******************/
+.parent{
+	position: relative;
+}
+.child{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.info_format_1 {
+	font-size: 3vh;
+	padding: 2vh 0 2vh 5vw;
+	background-color: rgba(255,255,255,.5);
+}
+
+.info_format_2 {
+	font-size: 3vh;
+	padding: 2vh 0 2vh 5vw;
+	border-left: solid 2px rgba(255,255,255,.5);
+	/* border-bottom: solid 2px rgba(255,255,255,.5); */
+}
+
+/******************ANIMATIONS************************/
+@keyframes floatUp{
+	from{
+		opacity: 0;
+		transform: translate(0 , 200%);
+	}
+	to{
+		opacity: 100%;
+		transform: translate(0%, 0%);
+	}
+}
+@keyframes fadeIn {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 100%;
+	}
+}

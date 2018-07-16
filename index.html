@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+	<meta charset="UTF-8">
+	<title>WeatherApp</title>
+	<meta name="viewport" content="width=device-width,height=device-height initial-scale=1.0">
+	<!--GOOGLE FONTS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	<!--JQUERY-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- SCRIPT.JS -->
+	<script type="text/javascript" src="scripts.js"></script>
+	<!--index.css -->
+	<link rel="stylesheet" href="index.css">
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" type="text/css" href="bootstrap-4.1.0-dist/css/bootstrap.css">
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon"
+	      type="image/png"
+	      href="resources/cloudy_mini.ico">
+</head>
+<body class="container-fluid parent" style="background-color: transparent; padding-left: 0">
+<!--###################### TOP APP NAME ##########################-->
+<header class="txtFormat index_2">
+	<span id="appName_2">WeatherApp</span>
+	<span id="myName">
+			by
+			<a href="https://www.vladimirchavez.com" target="_blank">
+				Vladimir Chavez
+			</a>
+		</span>
+</header>
+<!--#######################APP NAME ON LOAD ########################-->
+	<div id="appName" class="txtFormat child col-xs-12 index_1">
+		<h1>WeatherApp</h1>
+		<p>
+			by
+			<a href="https://www.vladimirchavez.com" target="_blank">
+			Vladimir Chavez
+			</a>
+		</p>
+		<!--#################### SPINNER ##########################-->
+		<!-- remember to add fa-spin to class -->
+		<div id="spinner" class="loaderAppear fa fa-circle-o-notch index_1" style="font-size:28px"></div>
+	</div>
+	<!--############# CITY ######################-->
+	<div id="city" class="txtFormat row index_2">
+		<p>Somewhere, TX</p>
+	</div>
+
+	<!-- ############# TEMP, ICON, DESCRIPTION #################-->
+	<div id="main-info" class="txtFormat row index_2">
+		<div id="icon" class="col-4"><img src="resources/sample_icon.ico"></div>
+		<div class="col-8">
+			<div id="temp"class="col-12">76 F</div>
+			<div id="description" class="col-12">Cloudy with a chance of meat-balls.</div>
+		</div>
+	</div>
+	<!--################# DETAILS #######################-->
+	<div id="details" class="row txtFormat index_2" style="padding-left: 0">
+		<div class="col-12">
+			<div id="winds" class="row info_format_1" style="margin-top: 0;">
+				<div class="col-4">Wind :</div>
+				<div id="winds_des" class="col-8" style="width:600px;"></div>
+			</div>
+			<div id="humidity" class="row info_format_2">
+				<div class="col-4">Humidity:</div>
+				<div id="h_des" class="col-8"></div>
+			</div>
+			<div id="sunrise" class="row info_format_1">
+				<div class="col-4">Sunrise:</div>
+				<div id="rise_des" class="col-8"></div>
+			</div>
+			<div id="sunset" class="row info_format_2" style="margin-bottom: auto">
+				<div class="col-4">Sunset:</div>
+				<div id="set_des" class="col-8"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
